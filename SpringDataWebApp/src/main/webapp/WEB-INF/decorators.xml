@@ -1,0 +1,16 @@
+<decorators defaultdir="/decorators">
+  <excludes>
+    <pattern>**ajax=true**</pattern>
+    <pattern>*/api/*</pattern>
+  </excludes>
+
+  <!--  The following patterns do not need a left menu -->
+  <decorator name="default" page="default.jsp">
+    <pattern>/login*</pattern>
+    <pattern>/logout*</pattern>
+    <pattern>/accessDenied*</pattern>
+    <pattern>/404*</pattern>
+    <pattern>/error*</pattern>
+    <pattern>/health*</pattern>
+  </decorator>
+</decorators>
